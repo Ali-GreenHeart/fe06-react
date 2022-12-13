@@ -1,0 +1,10 @@
+
+.darkMode,
+.darkMode * {
+    background-color: black;
+    color: whitesmoke;
+}
+
+h1{
+    margin: 0;
+}
