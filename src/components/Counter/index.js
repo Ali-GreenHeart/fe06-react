@@ -3,10 +3,9 @@ import Button from "../Button"
 import styles from "./index.module.css"
 
 const Counter = () => {
-    const [count, setCount] = useState(0) 
+    const [count, setCount] = useState(0)
     const [isDarkMode, setIsDarkMode] = useState(true)
-
-
+    
     return (
         <div style={{ height: '100vh' }} className={isDarkMode ? styles.darkMode : ""}>
             <h1>{count}</h1>
@@ -25,6 +24,13 @@ const Counter = () => {
                 txt="0"
                 clickleyende={() => {
                     setCount(0)
+                }}
+            />
+            <Button
+                txt="special"
+                clickleyende={() => {
+                    const eded = +prompt('ededi daxil edin: ')
+                    setCount(eded)
                 }}
             />
             <Button
