@@ -1,14 +1,15 @@
 import PageContainer from "components/PageContainer";
 
-const HomePage = () => {
+const AboutPage = () => {
     return (
         <>
             <PageContainer>
-                <h1>Welcome home!</h1>
+                <div>
+                    <p>salam about</p>
+                </div>
             </PageContainer>
         </>
     )
 }
 
-
-export default HomePage;
+export default AboutPage;

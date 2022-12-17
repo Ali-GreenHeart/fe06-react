@@ -1,0 +1,6 @@
+.navbar{
+    background-color: aquamarine;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
