@@ -1,7 +1,7 @@
 import Button from 'components/Button';
 import PageContainer from 'components/PageContainer';
 import { useState } from 'react';
-import User from '../User';
+import User from '../../components/User';
 import styles from './index.module.css'
 import usersData from './users.json'
 
