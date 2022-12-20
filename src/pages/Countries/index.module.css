@@ -1,0 +1,13 @@
+.basliq{
+    text-align: center;
+}
+
+.darkMode,
+.darkMode * {
+    background-color: black;
+    color: white;
+}
+
+.usersContainer{
+    min-height: 100vh;
+}

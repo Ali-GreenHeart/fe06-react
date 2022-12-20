@@ -1,9 +1,10 @@
-import Counter from "components/Counter";
+import Counter from "pages/Counter";
 import AboutPage from "pages/About";
 import HomePage from "pages/Home";
 import { Route, Routes } from "react-router-dom";
-import Users from "components/Users";
+import Users from "pages/Users";
 import Service from "pages/Service";
+import Countries from "pages/Countries";
 
 const WebsiteRouting = () => {
     return (
@@ -14,6 +15,7 @@ const WebsiteRouting = () => {
                 <Route path="/users" element={<Users />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/service" element={<Service />} />
+                <Route path="/countries" element={<Countries />} />
             </Routes>
         </>
     )
