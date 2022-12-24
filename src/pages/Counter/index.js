@@ -1,15 +1,13 @@
 import PageContainer from "components/PageContainer"
 import { useState } from "react"
 import Button from "../../components/Button"
-import styles from "./index.module.css"
 
 const Counter = () => {
     const [count, setCount] = useState(0)
-    const [isDarkMode, setIsDarkMode] = useState(true)
 
     return (
         <PageContainer>
-            <div style={{ height: '100vh' }} className={isDarkMode ? styles.darkMode : ""}>
+            <div style={{ height: '100vh' }}>
                 <h1>{count}</h1>
                 <Button
                     txt="+"
@@ -39,12 +37,6 @@ const Counter = () => {
                     txt="console"
                     clickleyende={() => {
                         console.log(count)
-                    }}
-                />
-                <Button
-                    txt={`${isDarkMode ? "🌞" : '🌙'}`}
-                    clickleyende={() => {
-                        setIsDarkMode(!isDarkMode)
                     }}
                 />
             </div>

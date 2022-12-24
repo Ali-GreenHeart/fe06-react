@@ -5,7 +5,7 @@ const user_data = { name: 'ali', age: 12 }
 
 export const USER_DATA_CONTEXT = createContext({})
 
-const UserDataContext = ({children}) => {
+const UserDataContext = ({ children }) => {
     return (
         <USER_DATA_CONTEXT.Provider value={user_data}>
             {children}
