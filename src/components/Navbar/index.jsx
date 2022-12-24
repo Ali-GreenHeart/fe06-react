@@ -7,6 +7,8 @@ const Navbar=()=>{
             <a href="/users">Users</a>
             <a href="/about">About</a>
             <a href="/service">Service</a>
+            <a href="/countries">Countries</a>
+            <a href="/namefilter">Namefilter</a>
         </nav>
     )
 }

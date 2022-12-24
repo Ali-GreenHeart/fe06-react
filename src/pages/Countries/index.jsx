@@ -1,6 +1,5 @@
 import axios from 'axios'
 import Button from 'components/Button'
-import PageContainer from 'components/PageContainer'
 import { useState } from 'react'
 import styles from './index.module.css'
 
@@ -10,8 +9,7 @@ const Countries = () => {
     const [isDarkMode, setIsDarkMode] = useState(true)
     const [countryName, setCountryName] = useState('')
     const [country, setCountry] = useState({
-        currencies: [],
-        callingCodes: []
+        currencies: []
     })
 
     return (
@@ -27,15 +25,18 @@ const Countries = () => {
 
                 <div>
 
-                    <input placeholder='search a country!' value={countryName} type="text" onChange={(ev) => {
-                        setCountryName(ev.target.value)
-                    }} />
+                    <input
+                        placeholder='search a country!'
+                        type="text"
+                        value={countryName}
+                        onChange={(ev) => {
+                            setCountryName(ev.target.value)
+                        }} />
                     <Button txt="axtar" clickleyende={() => {
-                        console.log(countryName)
-                        axios.get(`https://restcountries.com/v3.1/name/${countryName}`).then(({ data }) => {
-                            console.log(data[0])
-                            setCountry(data[0])
-                        })
+                        axios.get(`https://restcountries.com/v3.1/name/${countryName}`)
+                            .then(({ data }) => {
+                                setCountry(data[0])
+                            })
                     }} />
                 </div>
                 <div>

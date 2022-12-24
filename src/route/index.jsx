@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Users from "pages/Users";
 import Service from "pages/Service";
 import Countries from "pages/Countries";
+import NameFilterPage from "pages/NameFilter";
 
 const WebsiteRouting = () => {
     return (
@@ -16,6 +17,7 @@ const WebsiteRouting = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/service" element={<Service />} />
                 <Route path="/countries" element={<Countries />} />
+                <Route path="/namefilter" element={<NameFilterPage />} />
             </Routes>
         </>
     )
