@@ -1,5 +1,5 @@
 import PageContainer from "components/PageContainer";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -17,10 +17,16 @@ const arr = [
 const NameFilterPage = () => {
     const [names, setNames] = useState(arr)
 
+    const inputRef = useRef()
+    
+    useEffect(() => {
+        inputRef.current.focus()
+    }, [inputRef])
+
     return (
         <>
             <PageContainer>
-                <input type="text"
+                <input ref={inputRef} type="text"
                     onChange={(e) => {
                         setNames(arr.filter((ad) => ad.startsWith(e.target.value)))
                     }}
