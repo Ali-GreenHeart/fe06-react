@@ -8,9 +8,8 @@ const Header = () => {
     const value = useContext(USER_DATA_CONTEXT)
     const [isDarkMode, changeDarkMode] = useContext(COLOR_MODE_CONTEXT)
 
-    console.log(value)
     return (
-        <header style={{ display: "flex", justifyContent: 'space-between' }}>
+        <header style={{ display: "flex", justifyContent: 'space-between', alignItems:'center' }}>
             <h1>Welcome {value.name} </h1>
             <Button
                 txt={`${isDarkMode ? "🌞" : '🌙'}`}
