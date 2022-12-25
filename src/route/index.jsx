@@ -6,6 +6,7 @@ import Users from "pages/Users";
 import Service from "pages/Service";
 import Countries from "pages/Countries";
 import NameFilterPage from "pages/NameFilter";
+import PostsPage from "pages/Posts";
 
 const WebsiteRouting = () => {
     return (
@@ -18,6 +19,7 @@ const WebsiteRouting = () => {
                 <Route path="/service" element={<Service />} />
                 <Route path="/countries" element={<Countries />} />
                 <Route path="/namefilter" element={<NameFilterPage />} />
+                <Route path="/posts" element={<PostsPage />} />
             </Routes>
         </>
     )
