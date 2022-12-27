@@ -10,6 +10,7 @@ const Navbar=()=>{
             <a href="/countries">Countries</a>
             <a href="/namefilter">Namefilter</a>
             <a href="/posts">Posts</a>
+            <a href="/users-reducer">UsersWithReducer</a>
         </nav>
     )
 }
