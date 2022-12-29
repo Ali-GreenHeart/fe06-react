@@ -11,6 +11,7 @@ const Navbar=()=>{
             <a href="/namefilter">Namefilter</a>
             <a href="/posts">Posts</a>
             <a href="/users-reducer">UsersWithReducer</a>
+            <a href="/users-redux">UsersWithRedux</a>
         </nav>
     )
 }

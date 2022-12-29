@@ -8,6 +8,7 @@ import Countries from "pages/Countries";
 import NameFilterPage from "pages/NameFilter";
 import PostsPage from "pages/Posts";
 import UsersWithReducer from "pages/UsersWithReducer";
+import UsersWithRedux from "pages/UsersWithRedux";
 
 const WebsiteRouting = () => {
     return (
@@ -22,6 +23,7 @@ const WebsiteRouting = () => {
                 <Route path="/namefilter" element={<NameFilterPage />} />
                 <Route path="/posts" element={<PostsPage />} />
                 <Route path="/users-reducer" element={<UsersWithReducer />} />
+                <Route path="/users-redux" element={<UsersWithRedux />} />
             </Routes>
         </>
     )
