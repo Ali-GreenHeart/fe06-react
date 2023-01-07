@@ -9,6 +9,7 @@ import NameFilterPage from "pages/NameFilter";
 import PostsPage from "pages/Posts";
 import UsersWithReducer from "pages/UsersWithReducer";
 import UsersWithRedux from "pages/UsersWithRedux";
+import CounterRedux from "pages/CounterRedux";
 
 const WebsiteRouting = () => {
     return (
@@ -16,6 +17,7 @@ const WebsiteRouting = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/counter" element={<Counter />} />
+                <Route path="/counter-redux" element={<CounterRedux />} />
                 <Route path="/users" element={<Users />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/service" element={<Service />} />

@@ -1,20 +1,19 @@
 import PageContainer from 'components/PageContainer';
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { ActionTypes } from 'reducers/UserReducer';
+import { v4 as uuidv4 } from 'uuid';
 import User from '../../components/User';
 import styles from './index.module.css';
 import usersData from './users.json';
-import { v4 as uuidv4 } from 'uuid';
-import UserReducer, { ActionTypes } from 'reducers/UserReducer';
-import { connect } from 'react-redux';
 
 
 
-const UsersWithRedux = ( {users, dispatch }) => {
+const UsersWithRedux = ({ users, dispatch }) => {
 
     useEffect(() => {
         dispatch({ type: ActionTypes.loadUsers, data: usersData })
     }, [])
-
 
 
     return (
@@ -45,7 +44,6 @@ const UsersWithRedux = ( {users, dispatch }) => {
 }
 
 const mapStoreToProps = (store) => {
-    console.log(store)
     return store;
 }
 

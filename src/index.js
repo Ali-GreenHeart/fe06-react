@@ -1,9 +1,9 @@
-import ColorModeContext, { COLOR_MODE_CONTEXT } from 'context/ColorModeContext';
+import ColorModeContext from 'context/ColorModeContext';
 import UserDataContext from 'context/UserDataContext';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import { redux_reducer } from 'reducers/UsersReduxReducer';
+import { counter_reducer } from 'reducers/CounterRedux';
 import { createStore } from 'redux';
 import App from './App';
 import './index.css';
@@ -11,7 +11,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-const store = createStore(redux_reducer)
+const store = createStore(counter_reducer)
 
 
 root.render(
