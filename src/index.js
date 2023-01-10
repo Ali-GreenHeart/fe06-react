@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@mui/material';
 import ColorModeContext from 'context/ColorModeContext';
+import MuiModeContext from 'context/MuiModeContext';
 import UserDataContext from 'context/UserDataContext';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
@@ -19,14 +20,14 @@ const store = createStore(counter_reducer)
 
 root.render(
     <Provider store={store}>
-        <ThemeProvider theme={theme}>
-            <UserDataContext>
-                <ColorModeContext>
-                    <BrowserRouter>
-                        <App />
-                    </BrowserRouter>
-                </ColorModeContext>
-            </UserDataContext>
-        </ThemeProvider>
+        <MuiModeContext>
+                <UserDataContext>
+                    <ColorModeContext>
+                        <BrowserRouter>
+                            <App />
+                        </BrowserRouter>
+                    </ColorModeContext>
+                </UserDataContext>
+        </MuiModeContext>
     </Provider >
 );
