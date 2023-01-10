@@ -12,6 +12,7 @@ const Navbar=()=>{
             <a href="/posts">Posts</a>
             <a href="/users-reducer">UsersWithReducer</a>
             <a href="/users-redux">UsersWithRedux</a>
+            <a href="/mui">Mui Page</a>
         </nav>
     )
 }

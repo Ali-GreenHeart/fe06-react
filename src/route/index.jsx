@@ -10,6 +10,7 @@ import PostsPage from "pages/Posts";
 import UsersWithReducer from "pages/UsersWithReducer";
 import UsersWithRedux from "pages/UsersWithRedux";
 import CounterRedux from "pages/CounterRedux";
+import MuiPage from "pages/Mui";
 
 const WebsiteRouting = () => {
     return (
@@ -26,6 +27,7 @@ const WebsiteRouting = () => {
                 <Route path="/posts" element={<PostsPage />} />
                 <Route path="/users-reducer" element={<UsersWithReducer />} />
                 <Route path="/users-redux" element={<UsersWithRedux />} />
+                <Route path="/mui" element={<MuiPage />} />
             </Routes>
         </>
     )

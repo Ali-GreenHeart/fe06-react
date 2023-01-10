@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material"
 import PageContainer from "components/PageContainer"
 import { useState } from "react"
 import Button from "../../components/Button"
@@ -8,7 +9,9 @@ const Counter = () => {
     return (
         <PageContainer>
             <div style={{ height: '100vh' }}>
-                <h1>{count}</h1>
+                <Typography variant="body1">
+                    {count}
+                </Typography>
                 <Button
                     txt="+"
                     clickleyende={() => {
